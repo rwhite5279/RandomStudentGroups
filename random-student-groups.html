@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Random Student Groups</title>
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta name="resource-type" content="document" />
+	<meta name="author" content="Richard White" />
+	<meta name="Description" content="Random Student Groups" />
+	<meta name="Keywords" content="Richard White" />
+	<meta name="distribution" content="global" />
+	<meta name="Content-Type" content="text/html; charset=utf-8" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css" media="all">
+		html {margin: 0; padding: 0; }
+		body {margin: 0; padding: 0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1.5em; font-weight: normal; color: #fff; background: #333; }
+		a:link, a:visited 	{text-decoration: underline; color: #fff; font-weight: bold; }
+		a:hover, a:active	{text-decoration: none; color: #2f2;}
+		#mainwrapper {margin:0; padding: 0; border: 0; width:100%;}
+		.columnwrapper {width: 100%; margin: 0 auto; padding: 0; border: 0; overflow: auto; } 		  
+		#content {margin: 1em 0.5em; border: 0; padding: 0; }
+		input,textarea	{background-color: #fff; color: #000; font-size: 110%; border: 0; padding: 5px; width: 90%; } */
+		td    {color: #0f0}
+		/* desktop display, for large-width desktop-sized display, all the way down to 600px wide*/
+        @media (min-width: 600px) { 
+            body {font-size: 90%;}
+            .columnwrapper {width: 100%; max-width: 1000px; margin: 0 auto; padding: 0;}
+        }
+	</style>
+</head>
+<body>
+ 	<div id="mainwrapper">	    	
+    	<div class="columnwrapper">
+    		<div id="content">
+				<h1>Random Student Groups</h1>
+				<p>Enter or paste in student names, separated by commas or lines. Then indicate how many members you want per group. Click the "Submit" button to create a randomly populated set of student groups. Students who can't be inserted into a full group are listed at the end, to be assigned as desired by the instructor.</p>
+				<form name="login" method="POST" action="./cgi-bin/random-student-groups.py" >
+					<table cellspacing="0" cellpadding="5" width="100%">
+						<tr>
+							<td width="30%" align="right"><b>Names (one per line, or comma-separated) </b></td>
+							<td width="70%" align="left"><textarea name="names" rows="3" cols="100" wrap="soft"></textarea></td>
+						</tr>
+						<tr>
+							<td width="30%" align="right"><b>Number of members per group </b></td>
+							<td width="70%" align="left"><input type="text" name="groupSize" style="width: 5em;" /></td>
+						</tr>
+						<tr>
+							<td width="30%" align="right">&nbsp;</td>
+							<td width="70%" align="left"><input style="border: solid 1px #ccc; font-size: 90%; width: 5em;" type="submit" value="Submit" /></td>
+						</tr>
+					</table>
+				</form>
+       		</div><!--content-->
+   		</div><!--columnwrapper-->
+  </div><!--mainwrapper-->
+</body>
+</html>
